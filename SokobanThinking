@@ -1,0 +1,61 @@
+Main
+	Create map
+	Create sokoban solver
+	Solve 
+	Print result from solver
+
+
+SokobanSolver:
+	- List of unvisited nodes
+	- Final node (Nullable node)
+	- Method sokoban step
+	- Method move and create
+	
+	Get final path:
+		String toPrint
+		add sokoban step to print
+		return get final path from parent node
+
+	Move and create:
+		Get box position
+		Push box and update positions of sokoban and box
+		if on end position
+		Find neighboring positions of new box which do not lead to corner and do not include opposing position of sokoban
+		Create nodes with finishing position to found neighbors and clear visited A star nodes
+
+	Sokoban step:
+		Get best position from list of unvisited nodes
+		if on finishing position
+			move and create
+		else
+			create verticies from neigboring unvisited tiles
+	
+	Solve:
+		Add base state to list of unvisited nodes
+		loop while you have unvisited nodes and dont have a result:
+			sokoban step
+		if final node is null:
+			There is no solution to problem
+		else
+			print: get final path from final node
+	
+
+Node: (data class)
+	- destination position
+	- map state
+	- parent node
+	- sokoban step
+	- g value (destination traveled by sokoban)
+	- h value (heuristic value is sum of travel length to destination and position from box to finish)
+	- f value (g + h)
+
+MapState:
+	- position of sokoban
+	- position of box
+	- map tiles
+	
+MapTile:
+	- visited (boolean)
+	- x
+	- y
+	- type (wall, space, box of sokoban)

@@ -1,0 +1,12 @@
+11
+SX---X--X--
+-B-X-X-XXX-
+-XFX---X---
+---XXX-XXX-
+XX-X-X---X-
+-X-X-X-X-X-
+-X----XX-X-
+---XX-X----
+-X--X-XX-X-
+-XXXXXXXXX-
+-----------
