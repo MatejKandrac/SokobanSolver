@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) Matej Kandráč
+ */
+
 package map;
 
 /**

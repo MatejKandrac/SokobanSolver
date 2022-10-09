@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) Matej Kandráč
+ */
+
 import map.MapFactory;
 import map.Tile;
 import solver.AStarSolver;

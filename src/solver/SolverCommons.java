@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) Matej Kandráč
+ */
+
 package solver;
 
 import map.Tile;
